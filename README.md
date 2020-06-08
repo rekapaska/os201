@@ -1,1 +1,1 @@
-cd./index.md
+index.md
