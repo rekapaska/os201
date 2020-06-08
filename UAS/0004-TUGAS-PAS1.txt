@@ -1,0 +1,38 @@
+Script started on Tue 09 Jun 2020 02:56:10 AM WIB
+reka.paska@badak:~/gnupg$ PS1="$ "
+$ echo $GitHubUser
+rekapaska
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ eval $PSTAMP
+200609-025649-c931-gnupg/>
+$ PS1="\$(eval \$PSTAMP)"
+200609-025657-3e83-gnupg/> echo -e $CEKSAYA
+rekapaska ZCZCSCRIPTSTART 200606-232900 rekapaska
+rekapaska rekapaska 200606-233101-5dbf-gnupg/ 200606-233101 SEQOK SUMOK 5dbf3e88
+rekapaska rekapaska 200606-233131-4fe3-gnupg/ 200606-233131 SEQOK SUMOK 4fe38213
+rekapaska rekapaska 200606-233143-31ac-gnupg/ 200606-233143 SEQOK SUMOK 31ac5287
+rekapaska rekapaska 200606-233226-4476-gnupg/ 200606-233226 SEQOK SUMOK 44769e5b
+rekapaska ZCZCSCRIPTSTOP 200606-233240 SEQOK
+
+200609-025712-9397-gnupg/> echo -e $CEKSEBELA1
+rekapaska ZCZCSCRIPTSTART 200603-194619 reynardryanda
+rekapaska reynardryanda 200603-194640-8d81-reynard.adha/ 200603-194640 SEQOK SUMOK 8d81760b
+rekapaska reynardryanda 200603-194721-e73a-reynard.adha/ 200603-194721 SEQOK SUMOK e73abd3b
+rekapaska reynardryanda 200603-194730-e85c-reynard.adha/ 200603-194730 SEQOK SUMOK e85cd1c5
+rekapaska reynardryanda 200603-194733-f66e-reynard.adha/ 200603-194733 SEQOK SUMOK f66ecbe6
+rekapaska reynardryanda 200603-194738-a8a7-reynard.adha/ 200603-194738 SEQOK SUMOK a8a7721b
+rekapaska ZCZCSCRIPTSTOP 200603-194842 SEQOK
+
+200609-025720-e591-gnupg/> echo -e $CEKSEBELA2
+rekapaska ZCZCSCRIPTSTART 200602-214354 ronaldi-tj
+rekapaska ronaldi-tj 200602-214418-d968-UAS/ 200602-214418 SEQOK SUMOK d968d7b5
+rekapaska ronaldi-tj 200602-214424-be6e-UAS/ 200602-214424 SEQOK SUMOK be6ea754
+rekapaska ronaldi-tj 200602-214433-65c4-UAS/ 200602-214433 SEQOK SUMOK 65c4351c
+rekapaska ronaldi-tj 200602-214439-843c-UAS/ 200602-214439 SEQOK SUMOK 843c3163
+rekapaska ZCZCSCRIPTSTOP 200602-214449 SEQOK
+
+200609-025728-2483-gnupg/> exit
+exit
+
+Script done on Tue 09 Jun 2020 02:57:34 AM WIB
