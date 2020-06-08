@@ -1,1 +1,1 @@
-[link to section](index.md)
+[a relative link](index.md)
