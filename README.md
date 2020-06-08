@@ -1,1 +1,1 @@
-index.md
+[link](index.md)
