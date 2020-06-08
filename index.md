@@ -6,6 +6,6 @@ Halo, nama saya Reka Paska Enda. Saya adalah mahasiswa Fasilkom UI angkatan 2018
 
 Dalam pembelajaran sistem operasi ini saya mendapatkan bantuan dari beberapa sumber, seperti berikut: 
 
-```markdown
 * [URLs](URLs/)
-```
+
+
