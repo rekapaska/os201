@@ -1,1 +1,1 @@
-[a relative link](index.md)
+[web index](index.md)
