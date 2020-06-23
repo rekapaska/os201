@@ -1,0 +1,101 @@
+Script started on 2020-06-23 16:03:17+0000
+\[\e[33m\] \[\e[0m\]PS1="$ "
+$ echo $akunGitHub
+JahnsMichael
+$ date
+Tue Jun 23 16:03:38 UTC 2020
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(sleep 1;echo $TMP1-$akunGitHub-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ PS1="\$(eval \$PSTAMP)"
+200623-160356-4074-LatihanOS/> make clean
+rm -f p00 p04 p03 p05 main p01 p06 p02 SharedMemoryFile.bin
+200623-160410-47f1-LatihanOS/> ./p00
+sh: 7: ./p00: not found
+200623-160420-4dec-LatihanOS/> . make
+gcc -std=gnu11 -pthread    p00.c p00.h   -o p00
+gcc -std=gnu11 -pthread    p04.c p00.h   -o p04
+gcc -std=gnu11 -pthread    p03.c p00.h   -o p03
+gcc -std=gnu11 -pthread    p05.c p00.h   -o p05
+gcc -std=gnu11 -pthread    main.c p00.h   -o main
+gcc -std=gnu11 -pthread    p01.c p00.h   -o p01
+gcc -std=gnu11 -pthread    p06.c p00.h   -o p06
+gcc -std=gnu11 -pthread    p02.c p00.h   -o p02
+200623-160434-4097-LatihanOS/> ./p01
+rekapaska     [START PID[783] PPID[566]]
+No "SharedMemoryFile.bin" file.
+200623-160452-4822-LatihanOS/> ./p02
+glendaesutanto[START PID[823] PPID[566]]
+No "SharedMemoryFile.bin" file.
+200623-160505-a172-LatihanOS/> ./p03
+wulanmantiri  [START PID[841] PPID[566]]
+No "SharedMemoryFile.bin" file.
+200623-160513-5165-LatihanOS/> ./p04
+shanniadm     [START PID[849] PPID[566]]
+No "SharedMemoryFile.bin" file.
+200623-160520-42c9-LatihanOS/> ./p05
+chelmel18     [START PID[857] PPID[566]]
+No "SharedMemoryFile.bin" file.
+200623-160528-bf9e-LatihanOS/> ./p06
+zxrsvy        [START PID[897] PPID[566]]
+No "SharedMemoryFile.bin" file.
+200623-160536-44be-LatihanOS/> ./p00
+JahnsMichael  [START PID[913] PPID[566]]
+rekapaska     [START PID[914] PPID[913]]
+zxrsvy        [START PID[919] PPID[913]]
+shanniadm     [START PID[917] PPID[913]]
+wulanmantiri  [START PID[916] PPID[913]]
+glendaesutanto[START PID[915] PPID[913]]
+chelmel18     [START PID[918] PPID[913]]
+wulanmantiri  [progs[00] TIME[02] MUTEX[02] MMAP[OPEN] []]
+shanniadm     [progs[01] TIME[04] MUTEX[02] MMAP[OPEN] [][]]
+JahnsMichael  [progs[02] TIME[06] MUTEX[02] MMAP[OPEN] [][][]]
+zxrsvy        [progs[03] TIME[08] MUTEX[02] MMAP[OPEN] [][][][]]
+glendaesutanto[progs[04] TIME[10] MUTEX[02] MMAP[OPEN] [][][][][]]
+rekapaska     [progs[05] TIME[12] MUTEX[02] MMAP[OPEN] [][][][][][]]
+chelmel18     [progs[06] TIME[16] MUTEX[02] MMAP[OPEN] [wulanmantiri][shanniadm][][][][][]]
+JahnsMichael  [progs[02] TIME[20] MUTEX[04] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][][]]
+shanniadm     [progs[01] TIME[21] MUTEX[04] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][][]]
+shanniadm     [progs[01] TIME[22] MUTEX[05] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][][]]
+shanniadm     [BYEBYE =====  ===== =====]
+JahnsMichael  [progs[02] TIME[23] MUTEX[05] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][][]]
+zxrsvy        [progs[03] TIME[25] MUTEX[04] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+zxrsvy        [progs[03] TIME[26] MUTEX[05] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+zxrsvy        [BYEBYE =====  ===== =====]
+JahnsMichael  [progs[02] TIME[27] MUTEX[06] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+wulanmantiri  [progs[00] TIME[28] MUTEX[04] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+wulanmantiri  [progs[00] TIME[29] MUTEX[05] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+wulanmantiri  [BYEBYE =====  ===== =====]
+JahnsMichael  [progs[02] TIME[30] MUTEX[07] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+glendaesutanto[progs[04] TIME[31] MUTEX[04] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+glendaesutanto[progs[04] TIME[32] MUTEX[05] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+glendaesutanto[BYEBYE =====  ===== =====]
+JahnsMichael  [progs[02] TIME[33] MUTEX[08] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][]]
+rekapaska     [progs[05] TIME[35] MUTEX[04] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][chelmel18]]
+rekapaska     [progs[05] TIME[36] MUTEX[05] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][chelmel18]]
+rekapaska     [BYEBYE =====  ===== =====]
+JahnsMichael  [progs[02] TIME[37] MUTEX[09] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][chelmel18]]
+chelmel18     [progs[06] TIME[38] MUTEX[04] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][chelmel18]]
+chelmel18     [progs[06] TIME[39] MUTEX[05] MMAP[OPEN] [wulanmantiri][shanniadm][JahnsMichael][zxrsvy][glendaesutanto][rekapaska][chelmel18]]
+chelmel18     [BYEBYE =====  ===== =====]
+JahnsMichael  [BYEBYE =====  ===== =====]
+200623-160607-bc0a-LatihanOS/> ./p01
+rekapaska     [START PID[967] PPID[566]]
+CLOSED, BYE BYE ==== ====
+200623-160624-31c9-LatihanOS/> ./p02
+glendaesutanto[START PID[980] PPID[566]]
+CLOSED, BYE BYE ==== ====
+200623-160633-4e45-LatihanOS/> ./p03
+wulanmantiri  [START PID[1015] PPID[566]]
+CLOSED, BYE BYE ==== ====
+200623-160640-ebff-LatihanOS/> ./p04
+shanniadm     [START PID[1031] PPID[566]]
+CLOSED, BYE BYE ==== ====
+200623-160647-741d-LatihanOS/> ./p05
+chelmel18     [START PID[1040] PPID[566]]
+CLOSED, BYE BYE ==== ====
+200623-160657-c18d-LatihanOS/> ./p06
+zxrsvy        [START PID[1080] PPID[566]]
+CLOSED, BYE BYE ==== ====
+200623-160708-aab8-LatihanOS/> exit
+
+Script done on 2020-06-23 16:07:13+0000
